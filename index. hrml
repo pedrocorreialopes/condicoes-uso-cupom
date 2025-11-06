@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condições de Uso do Cupom</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 700px;
+      width: 100%;
+      padding: 3rem 2.5rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 1.5rem;
+    }
+
+    .header h1 {
+      color: #667eea;
+      font-size: 2rem;
+      margin: 0 0 0.5rem 0;
+      font-weight: 700;
+    }
+
+    .header p {
+      color: #666;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .conditions-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .condition-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.75rem;
+      padding: 1.25rem;
+      background: #f8f9ff;
+      border-radius: 12px;
+      border-left: 4px solid #667eea;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .condition-item:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+    }
+
+    .condition-number {
+      background: #667eea;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-right: 1rem;
+    }
+
+    .condition-text {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 2px solid #e0e0e0;
+    }
+
+    .footer p {
+      color: #667eea;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .icon {
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 2rem 1.5rem;
+      }
+
+      .header h1 {
+        font-size: 1.5rem;
+      }
+
+      .condition-item {
+        padding: 1rem;
+      }
+
+      .condition-text {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="container">
+   <header class="header">
+    <h1 id="page-title">Condições de Uso do Cupom</h1>
+    <p id="subtitle">Leia atentamente as condições para aproveitar ao máximo seus descontos</p>
+   </header>
+   <ul class="conditions-list">
+    <li class="condition-item">
+     <div class="condition-number">
+      1
+     </div>
+     <div class="condition-text"><span class="icon">📅</span> <strong>Validade:</strong> Use o cupom para um evento até a data de validade especificada.
+     </div></li>
+    <li class="condition-item">
+     <div class="condition-number">
+      2
+     </div>
+     <div class="condition-text"><span class="icon">🎁</span> <strong>Transferência:</strong> O cupom pode ser transferido para alguém de sua preferência, porém só poderá ser usado uma vez.
+     </div></li>
+    <li class="condition-item">
+     <div class="condition-number">
+      3
+     </div>
+     <div class="condition-text"><span class="icon">⭐</span> <strong>Programa de Fidelidade:</strong> À medida que você for utilizando nossos serviços, como fidelidade, poderá receber novos cupons com descontos maiores.
+     </div></li>
+    <li class="condition-item">
+     <div class="condition-number">
+      4
+     </div>
+     <div class="condition-text"><span class="icon">👥</span> <strong>Indicação:</strong> Se você indicar uma pessoa e esta fechar com a gente, você ganhará um cupom de 5% de desconto.
+     </div></li>
+    <li class="condition-item">
+     <div class="condition-number">
+      5
+     </div>
+     <div class="condition-text"><span class="icon">➕</span> <strong>Cupons Cumulativos:</strong> Os cupons são cumulativos, desde que usados até seus respectivos vencimentos.
+     </div></li>
+   </ul>
+   <footer class="footer">
+    <p id="footer-text">✨ Aproveite seus descontos e bons eventos! ✨</p>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      page_title: "Condições de Uso do Cupom",
+      subtitle: "Leia atentamente as condições para aproveitar ao máximo seus descontos",
+      footer_text: "✨ Aproveite seus descontos e bons eventos! ✨",
+      primary_color: "#667eea",
+      text_color: "#333333",
+      background_gradient_start: "#667eea",
+      background_gradient_end: "#764ba2"
+    };
+
+    async function onConfigChange(config) {
+      const primaryColor = config.primary_color || defaultConfig.primary_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const gradientStart = config.background_gradient_start || defaultConfig.background_gradient_start;
+      const gradientEnd = config.background_gradient_end || defaultConfig.background_gradient_end;
+
+      document.getElementById('page-title').textContent = config.page_title || defaultConfig.page_title;
+      document.getElementById('subtitle').textContent = config.subtitle || defaultConfig.subtitle;
+      document.getElementById('footer-text').textContent = config.footer_text || defaultConfig.footer_text;
+
+      document.getElementById('page-title').style.color = primaryColor;
+      document.querySelector('.header').style.borderBottomColor = primaryColor;
+      document.querySelector('.footer p').style.color = primaryColor;
+
+      document.querySelectorAll('.condition-number').forEach(el => {
+        el.style.backgroundColor = primaryColor;
+      });
+
+      document.querySelectorAll('.condition-item').forEach(el => {
+        el.style.borderLeftColor = primaryColor;
+      });
+
+      document.querySelectorAll('.condition-text').forEach(el => {
+        el.style.color = textColor;
+      });
+
+      document.body.style.background = `linear-gradient(135deg, ${gradientStart} 0%, ${gradientEnd} 100%)`;
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.primary_color || defaultConfig.primary_color,
+              set: (value) => {
+                config.primary_color = value;
+                window.elementSdk.setConfig({ primary_color: value });
+              }
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => {
+                config.text_color = value;
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            },
+            {
+              get: () => config.background_gradient_start || defaultConfig.background_gradient_start,
+              set: (value) => {
+                config.background_gradient_start = value;
+                window.elementSdk.setConfig({ background_gradient_start: value });
+              }
+            },
+            {
+              get: () => config.background_gradient_end || defaultConfig.background_gradient_end,
+              set: (value) => {
+                config.background_gradient_end = value;
+                window.elementSdk.setConfig({ background_gradient_end: value });
+              }
+            }
+          ],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ["page_title", config.page_title || defaultConfig.page_title],
+          ["subtitle", config.subtitle || defaultConfig.subtitle],
+          ["footer_text", config.footer_text || defaultConfig.footer_text]
+        ])
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99a81b3525c66f91',t:'MTc2MjQ2ODk3MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
